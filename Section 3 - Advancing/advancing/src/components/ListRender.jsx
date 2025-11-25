@@ -2,11 +2,21 @@ import { useState } from "react";
 
 const ListRender = () => {
     const [list] = useState(["Item 1", "Item 2", "Item 3"]);
-    const [users] = useState([
-        { id: 114123423, name: "Alice" },
-        { id: 6236532532, name: "Bob" },
-        { id: 3234257834, name: "Charlie" }
+    const [users, setUsers] = useState([
+        { id: 1, name: "Alice" },
+        { id: 2, name: "Bob" },
+        { id: 3, name: "Charlie" }
     ]);
+
+    const deleteRandom = () => {
+        const randomIndex = Math.floor(Math.random() * 4);
+        
+        setUsers((prevUsers) => {
+            console.log(prevUsers);
+            return prevUsers.filter((user) => user.id !== randomIndex);
+        });
+        
+    }
 
     return (
         <div>
@@ -21,6 +31,8 @@ const ListRender = () => {
                     <li key={user.id}>{user.name}</li>
                 ))}
             </ul>
+
+            <button onClick={deleteRandom}>Delete random User</button>
         </div>
     )
 }
