@@ -1,0 +1,17 @@
+.car_details{
+    padding: 20px;
+    background-color: gray;
+    margin: 10px;
+}
+
+.car_details h2{
+    color: white;
+    font-weight: bold;
+}
+
+.car_details ul{
+    list-style-type: none;
+    color: gold;
+    padding: 0;
+    font-size: 1.1rem;
+}

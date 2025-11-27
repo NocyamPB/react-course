@@ -1,0 +1,22 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+  color: gold;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  margin: 0;
+}
+
+h2{
+  color: gray;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
