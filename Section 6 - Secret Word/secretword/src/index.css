@@ -1,0 +1,30 @@
+html, body{
+    min-height: 100vh;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    background: linear-gradient(to bottom, darkblue, blue);
+    color: white;
+}
+
+button{
+    cursor: pointer;
+    background-color: #1646A0;
+    color: white;
+    padding: 0 45px;
+    border: solid 2px white;
+    border-radius: 25px;
+    height: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    transition: .4s;
+}
+
+button:hover{
+    background-color: #0923AF;
+}
